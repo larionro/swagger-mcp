@@ -1,0 +1,34 @@
+{
+  "name": "swagger-mcp",
+  "version": "1.0.0",
+  "description": "An MCP server that exposes Swagger/OpenAPI endpoints as MCP tools",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "swagger-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@apidevtools/swagger-parser": "12.1.0",
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "axios": "1.16.1",
+    "commander": "14.0.3",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "25.7.0",
+    "tsx": "4.19.4",
+    "typescript": "6.0.3",
+    "vitest": "4.1.6"
+  }
+}
