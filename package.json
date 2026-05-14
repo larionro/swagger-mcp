@@ -1,0 +1,18 @@
+{
+  "name": "swagger-mcp",
+  "version": "2.0.0",
+  "description": "MCP server for Swagger/OpenAPI — authenticates with username/password, fetches fresh specs, and exposes tools for listing endpoints and executing API calls. Supports stdio and HTTP (Cloud Run) transports.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "swagger-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:http": "node src/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "express": "^4.21.0"
+  }
+}
